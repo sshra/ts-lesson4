@@ -1,4 +1,4 @@
-import { AbstractSelling } from "./class.abstractSelling";
+import { AbstractSelling } from "./AbstractSelling";
 import { Product } from "./Product";
 
 export class DiscontSelling extends AbstractSelling {

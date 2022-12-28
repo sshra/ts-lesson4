@@ -1,3 +1,4 @@
+import { rand } from "../utils/rand";
 import { Job } from "./Job";
 
 export class Person {
@@ -26,6 +27,6 @@ export class Person {
   }
 
   assignRandomJobFromList(jobs: Job[]) {
-    this.job = jobs[Math.floor(Math.random() * jobs.length)].clone();
+    this.job = jobs[rand(0, jobs.length -1)].clone();
   }
 }
